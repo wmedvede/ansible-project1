@@ -1,0 +1,10 @@
+- name: My second play
+#  hosts: virtualmachines
+  hosts: all
+  tasks:
+    - name: Ping my hosts second
+      ansible.builtin.ping:
+    - name: Print message second
+      ansible.builtin.debug:
+        msg: Hello world second
+
